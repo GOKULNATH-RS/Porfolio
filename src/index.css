@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Gruppo&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .poppins-head {
+    @apply font-poppins;
+  }
+  .geologica-head {
+    @apply font-geologica;
+  }
+  .gruppo-head {
+    @apply font-gruppo;
+  }
+  .flex-align-center {
+    @apply flex items-center gap-8;
+  }
+  .gradient-text {
+    @apply font-bold text-transparent  bg-clip-text bg-gradient-to-tl from-[#00FFF2] to-[#25DCFF];
+  }
+
+  .gradient-1 {
+    @apply bg-gradient-to-b from-[#8360C3] to-[#2EBF91] opacity-[35%];
+  }
+  .gradient-2 {
+    @apply bg-gradient-to-b from-[#7F7FD5] via-[#86A8E7] to-[#91EAE4] opacity-[35%];
+  }
+
+  .gradient-3 {
+    @apply bg-gradient-to-tl from-[#00FFF2] to-[#25DCFF];
+  }
+}
