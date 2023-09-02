@@ -19,3 +19,12 @@ export default function App() {
     </section>
   );
 }
+
+/*
+todo: Change Github icons , Twitter icon , Live Icon
+todo: Dark Theme / Light Theme
+todo: KnowMynation Project
+todo: Add Tech stack in project Card
+todo: Smooth animations
+
+*/
