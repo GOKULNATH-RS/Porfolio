@@ -1,4 +1,4 @@
-import Github from "./icons-github.svg";
+import Github from "./icons8-github.svg";
 import Twitter from "./icons-twitter.svg";
 import Linkedin from "./icons-linkedin.svg";
 import HTML from "./icons-html.svg";
@@ -10,6 +10,7 @@ import Dribble from "./icons-dribble.svg";
 import eye from "./icons-eye.svg";
 import Discord from "./icons-discord.svg";
 import eatIcon from "./icons-eat.svg";
+import eyeIconWhite from "./icons-eye-white.svg";
 import codeIcon from "./icons-code.svg";
 import sleepIcon from "./icons-sleep.svg";
 import repeatIcon from "./icons-repeat.svg";
@@ -30,4 +31,5 @@ export {
   sleepIcon,
   repeatIcon,
   codeIcon,
+  eyeIconWhite,
 };

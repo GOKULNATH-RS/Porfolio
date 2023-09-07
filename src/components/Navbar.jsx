@@ -46,9 +46,7 @@ const Navbar = () => {
         <div className="m-1 p-[3px] bg-gradient-to-r from-[rgba(0,0,0,0.25)] to-[rgba(0,0,0,0.1)] rounded-full flex items-center justify-center dark:bg-gradient-to-r dark:from-[rgba(255,255,255,0.25)] dark:to-[rgba(255,255,255,0.1)]">
           <div className="bg-[rgba(255,255,255,0.95)] w-[70px] h-[70px] flex justify-center items-center rounded-full drop-shadow-2xl cursor-pointer">
             <img
-              src={
-                document.body.classList.contains("dark") ? SunIcon : MoonIcon
-              }
+              src={SunIcon}
               className="h-[50px] w-[50px]"
               onClick={handleTheme}
             />

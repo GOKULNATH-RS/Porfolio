@@ -1,12 +1,12 @@
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../utils/constants";
 import { motion } from "framer-motion";
-import { FadeIn, SlideIn } from "../utils/motion";
+import { FadeIn } from "../utils/motion";
 
 const Projects = () => {
   return (
     <div
-      className="h-screen mx-[15%] flex flex-col justify-center items-center gap-10 z-[5]"
+      className="h-screen mx-[15%] flex flex-col justify-center items-center gap-10 dark:z-10"
       id="projects"
     >
       <motion.div

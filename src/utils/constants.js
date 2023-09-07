@@ -9,10 +9,15 @@ import {
   react,
   Dribble,
   eye,
+  eyeIconWhite,
   Discord,
 } from "../assets/icons";
 
-import { CarsWebsite, PortfolioWebsite } from "../assets/images/index";
+import {
+  CarsWebsite,
+  KnowmynationWebsite,
+  PortfolioWebsite,
+} from "../assets/images/index";
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -59,9 +64,20 @@ export const projects = [
     description: "My portfolio  that showcases my  skills ",
     tagText: "Web Dev",
     icon1: Github,
-    href1: "",
-    icon2: eye,
+    href1: "https://github.com/GOKULNATH-RS/Porfolio",
+    icon2: document.body.classList.contains("dark") ? eyeIconWhite : eye,
     href2: "https://gokulnath-rs.netlify.app/",
+  },
+  {
+    id: 3,
+    imgUrl: KnowmynationWebsite,
+    title: "Know My Nation",
+    description: "A simplified Website to know everything about India",
+    tagText: "Web Dev",
+    icon1: Github,
+    href1: "https://github.com/GOKULNATH-RS/Know-My-Nation",
+    icon2: document.body.classList.contains("dark") ? eyeIconWhite : eye,
+    href2: "https://knoemynation.netlify.app/",
   },
 ];
 
