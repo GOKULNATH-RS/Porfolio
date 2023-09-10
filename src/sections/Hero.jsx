@@ -6,7 +6,7 @@ import { motion, stagger } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col gap-8 z-[5] ">
+    <div className="h-screen flex flex-col gap-8 z-[5] max-sm:h-full max-md:h-full">
       <Navbar />
 
       <motion.div
@@ -16,14 +16,14 @@ const Hero = () => {
         viewport={{ once: false, amount: 0.25 }}
         className="blur-[145px] gradient-1 h-[50vh] w-[40vw] absolute top-2 left-[-2] -z-[1] dark:z-0"
       />
-      <div className="flex-align-center mx-[15%] mt-4 py-5 dark:z-3">
+      <div className="flex-align-center mx-[15%] mt-4 py-5 dark:z-3 max-sm:flex-col">
         <div className="flex-1  w-full h-full flex flex-col gap-7 justify-center items-start">
-          <motion.div className="flex flex-col justify-center gap-3 mb-8">
+          <motion.div className="flex flex-col justify-center gap-3 mb-8 max-sm:gap-6">
             <motion.h2
               variants={FadeIn("right", "tween", 0.7, 0.4)}
               initial="hidden"
               whileInView="show"
-              className="font-poppins text-5xl font-bold text-black-90 dark:text-white dark:z-3"
+              className="font-poppins text-4xl font-bold text-black-90 dark:text-white dark:z-3"
             >
               Hi
             </motion.h2>
@@ -31,7 +31,7 @@ const Hero = () => {
               variants={FadeIn("right", "tween", 1, 0.4)}
               initial="hidden"
               whileInView="show"
-              className="font-poppins text-5xl text-black-90 dark:text-white"
+              className="font-poppins text-4xl text-black-90 dark:text-white md:text-3xl"
             >
               I'm <span className="gradient-text">GOKULNATH R S</span>
             </motion.h2>

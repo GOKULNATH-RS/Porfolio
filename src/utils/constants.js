@@ -16,6 +16,7 @@ import {
 import {
   CarsWebsite,
   KnowmynationWebsite,
+  MultiverseConnections,
   PortfolioWebsite,
 } from "../assets/images/index";
 
@@ -65,7 +66,7 @@ export const projects = [
     tagText: "Web Dev",
     icon1: Github,
     href1: "https://github.com/GOKULNATH-RS/Porfolio",
-    icon2: document.body.classList.contains("dark") ? eyeIconWhite : eye,
+    icon2: eye,
     href2: "https://gokulnath-rs.netlify.app/",
   },
   {
@@ -76,8 +77,20 @@ export const projects = [
     tagText: "Web Dev",
     icon1: Github,
     href1: "https://github.com/GOKULNATH-RS/Know-My-Nation",
-    icon2: document.body.classList.contains("dark") ? eyeIconWhite : eye,
-    href2: "https://knoemynation.netlify.app/",
+    icon2: eye,
+    href2: "https://knowmynation.netlify.app/",
+  },
+  {
+    id: 4,
+    imgUrl: MultiverseConnections,
+    title: "Multiverse Connections",
+    description:
+      "A Imaginary Website inspired by a fascination with multiverse",
+    tagText: "Web Dev",
+    icon1: Github,
+    href1: "https://github.com/GOKULNATH-RS/Multiverse-Connections",
+    icon2: eye,
+    href2: "https://multiverseconnections.netlify.app/",
   },
 ];
 

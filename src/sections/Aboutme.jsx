@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Aboutme = () => {
   return (
     <div
-      className=" mx-[15%] h-screen flex-align-center gap-3 z-[5]"
+      className=" mx-[15%] h-screen flex-align-center gap-3 z-[5] max-sm:scale-90 max-sm:h-full max-sm:mt-10 max-md:h-full"
       id="about"
     >
       <motion.div
@@ -13,7 +13,7 @@ const Aboutme = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="flex-1 w-full h-full flex justify-center items-center"
+        className="flex-1 w-full h-full flex justify-center items-center max-sm:hidden"
       >
         <img src={AboutImg} className="h-[65vh] w-max" />
       </motion.div>
@@ -30,7 +30,7 @@ const Aboutme = () => {
           variants={FadeIn("left", "spring", 0.6, 0.6)}
           initial="hidden"
           whileInView="show"
-          className="text-lg flex justify-start leading-normal font-poppins text-black-90 dark:text-white"
+          className="text-lg flex justify-start leading-normal font-poppins text-black-90 dark:text-white md:text-md"
         >
           {AboutText}
         </motion.p>
@@ -41,7 +41,7 @@ const Aboutme = () => {
               initial="hidden"
               whileInView="show"
               key={skill.icon}
-              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.1)] p-2 hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.15)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
+              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.15)] p-2 hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.25)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
             >
               <motion.img
                 src={skill.icon}

@@ -1,16 +1,18 @@
 import ConnectImg from "../assets/images/connect-image.svg";
 import { connectLinks } from "../utils/constants";
-import { eatIcon, codeIcon, sleepIcon, repeatIcon } from "../assets/icons";
 import { motion } from "framer-motion";
 import { FadeIn, RotateIn } from "../utils/motion";
 const Connect = () => {
   return (
-    <div className=" mx-[15%] h-screen flex-align-center" id="connect">
+    <div
+      className=" mx-[15%] h-screen flex-align-center max-sm:scale-90 max-sm:h-full max-sm:my-10 max-md:h-full"
+      id="connect"
+    >
       <motion.div
         variants={RotateIn("left")}
         initial="hidden"
         whileInView="show"
-        className="flex-1 w-full h-full flex justify-center items-center"
+        className="flex-1 w-full h-full flex justify-center items-center max-sm:hidden "
       >
         <img src={ConnectImg} className="h-[65vh] w-max z-10" />
       </motion.div>
@@ -19,7 +21,7 @@ const Connect = () => {
           variants={FadeIn("left", "spring", 0.3, 0.6)}
           initial="hidden"
           whileInView="show"
-          className="text-black-90 font-poppins font-bold text-5xl dark:text-white"
+          className="text-black-90 font-poppins font-bold text-5xl dark:text-white max-md:text-3xl"
         >
           Connect with me
         </motion.div>

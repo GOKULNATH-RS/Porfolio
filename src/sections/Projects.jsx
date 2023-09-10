@@ -6,7 +6,7 @@ import { FadeIn } from "../utils/motion";
 const Projects = () => {
   return (
     <div
-      className="h-screen mx-[15%] flex flex-col justify-center items-center gap-10 dark:z-10"
+      className="h-full mx-[10%] flex flex-col justify-center items-center gap-10 dark:z-10 max-sm:scale-90 max-sm:relative max-sm:h-max max-md:h-full"
       id="projects"
     >
       <motion.div
@@ -14,7 +14,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="flex flex-col gap-6 content-start "
+        className="flex flex-col gap-6 content-start"
       >
         <h2 className="font-poppins text-center font-bold text-6xl text-black-90 dark:text-white">
           Projects
@@ -32,7 +32,7 @@ const Projects = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div className="flex gap-4 ">
+      <motion.div className="mx-20 flex gap-4 flex-wrap max-sm:flex-col justify-center">
         {projects.map((project, i) => (
           <motion.div
             variants={FadeIn("right", "spring", i * 0.4, 0.8)}
