@@ -31,7 +31,7 @@ const Hero = () => {
               variants={FadeIn("right", "tween", 1, 0.4)}
               initial="hidden"
               whileInView="show"
-              className="font-poppins text-4xl text-black-90 dark:text-white md:text-3xl"
+              className="font-poppins text-4xl text-black-90 dark:text-white max-md:text-3xl"
             >
               I'm <span className="gradient-text">GOKULNATH R S</span>
             </motion.h2>
