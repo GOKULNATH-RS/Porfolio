@@ -28,7 +28,7 @@ const Connect = () => {
         <div className="flex flex-col gap-3">
           {connectLinks.map((item, i) => (
             <motion.div
-              variants={FadeIn("left", "spring", i * 0.4, 0.8)}
+              variants={FadeIn("left", "spring", i * 0.3, 0.8)}
               initial="hidden"
               whileInView="show"
               key={item.icon}

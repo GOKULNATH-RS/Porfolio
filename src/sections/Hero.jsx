@@ -44,7 +44,7 @@ const Hero = () => {
               Front-End Developer | UI/UX Designer
             </motion.h2>
           </motion.div>
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center max-sm:pl-3">
             {Herolinks.map((link, i) => (
               <motion.a
                 variants={FadeIn("right", "tween", i * 0.3, 0.3)}
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <img
                   src={link.icon}
-                  className="cursor-pointer h-[40px] w-[40px]"
+                  className="cursor-pointer h-[40px]"
                 />
               </motion.a>
             ))}

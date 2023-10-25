@@ -19,17 +19,33 @@ const Projects = () => {
         <h2 className="font-poppins text-center font-bold text-6xl text-black-90 dark:text-white">
           Projects
         </h2>
-        <div className="flex gap-5 justify-center">
-          <div className="h-[45px] w-[150px] flex items-center justify-center rounded-full  shadow-primary hover:gradient-text cursor-pointer dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]">
-            <h3 className="font-gruppo font-bold text-xl dark:text-white ">
-              UI / UX
-            </h3>
-          </div>
-          <div className="h-[45px] w-[150px] flex items-center justify-center rounded-full  shadow-primary hover:gradient-text cursor-pointer dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]">
-            <h3 className="font-gruppo font-bold text-xl dark:text-white">
-              Web Dev
-            </h3>
-          </div>
+        <div className="flex flex-wrap gap-5 justify-center">
+          
+            {[
+              {
+                id:1,
+                label:"UI/UX",
+                onClick:"",
+              },
+              {
+                id:2,
+                label:"Front End",
+                onClick:"",
+              },
+              {
+                id:1,
+                label:"Full Stack",
+                onClick:"",
+              },
+            ].map((item) => {
+              return(
+                <div key={item.id}className="h-[45px] w-max px-6 flex items-center justify-center rounded-full  shadow-primary hover:gradient-text cursor-pointer dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]">
+                  <button className="font-gruppo font-bold text-xl dark:text-white ">
+                    {item.label}
+                  </button>
+                </div>
+              )
+            })}
         </div>
       </motion.div>
       <motion.div className="mx-20 flex gap-4 flex-wrap max-sm:flex-col justify-center">

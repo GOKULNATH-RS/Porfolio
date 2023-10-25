@@ -34,14 +34,14 @@ const Aboutme = () => {
         >
           {AboutText}
         </motion.p>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 flex-wrap">
           {skills.map((skill, i) => (
             <motion.div
               variants={FadeIn("left", "spring", i * 0.3, 0.6)}
               initial="hidden"
               whileInView="show"
               key={skill.icon}
-              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.15)] p-2 hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.25)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
+              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.15)] lg:p-2 p-[10px] hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.25)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
             >
               <motion.img
                 src={skill.icon}
