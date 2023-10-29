@@ -9,16 +9,24 @@ const ProjectCard = ({
   tagText,
 }) => {
   return (
-    <div className="flex flex-col justify-between p-2 h-[350px] w-[300px] rounded-3xl shadow-primary dark:shadow-[2px_2px_50px_0_rgba(255,255,255,0.05)]">
+    <div className="flex flex-col justify-between p-1 h-[350px] w-[300px] rounded-3xl shadow-primary dark:shadow-[2px_2px_50px_0_rgba(255,255,255,0.05)]">
       <div className="flex-1">
         <img src={imgUrl} className="rounded-[20px] h-full w-full " />
       </div>
+
+
+
       <div className="flex flex-col gap-1 flex-2 p-2 ">
         <h2 className="text-md font-bold font-geologica dark:text-white">
           {title}
         </h2>
-        <h4 className="text-sm font-geologica dark:text-white">{desription}</h4>
+        <h4 className="text-sm font-geologica dark:text-white">
+          {desription}
+          </h4>
+        
       </div>
+
+
       <div className="flex justify-between items-center flex-2 p-2">
         <div className="flex gap-2">
           <a

@@ -1,6 +1,6 @@
 import Github from "./icons8-github.svg";
 import Twitter from "./icons-twitter.svg";
-import Linkedin from "./icons-linkedin.svg";
+import Linkedin from "./icons-linkedin.png";
 import HTML from "./icons-html.svg";
 import CSS from "./icons-css.svg";
 import react from "./icons-react.svg";

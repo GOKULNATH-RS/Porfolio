@@ -53,10 +53,11 @@ const Hero = () => {
                 href={link.href}
                 key={link.icon}
                 target="blank"
+                className=" flex justify-center items-center"
               >
                 <img
                   src={link.icon}
-                  className="cursor-pointer h-[40px]"
+                  className="cursor-pointer h-[40px] rounded-full"
                 />
               </motion.a>
             ))}

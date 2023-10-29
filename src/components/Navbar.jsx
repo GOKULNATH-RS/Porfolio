@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [theme, setTheme] = useState();
+  const [Icon, setIcon] = useState(SunIcon);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -20,6 +21,7 @@ const Navbar = () => {
 
   const handleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+    setIcon(theme === "light" ? MoonIcon : SunIcon)
   };
 
   return (
@@ -47,7 +49,7 @@ const Navbar = () => {
           <div className="bg-[rgba(255,255,255,0.95)] w-[70px] h-[70px] flex justify-center items-center rounded-full drop-shadow-2xl cursor-pointer">
             <img
               src={
-                document.body.classList.contains("dark") ? SunIcon : MoonIcon
+                Icon
               }
               className="h-[50px] w-[50px]"
               onClick={handleTheme}

@@ -22,11 +22,11 @@ export default function App() {
 
 /*
 //todo: Change Github icons , Twitter icon , Live Icon
-todo: Change Theme icon toggling
+//todo: Change Theme icon toggling
 //todo: Dark Theme / Light Theme
 //todo: KnowMynation Project
 todo: Add Tech stack in project Card
-todo: Smooth animations
+//todo: Smooth animations
 todo: Menu in small devices
 todo: responsive
 
