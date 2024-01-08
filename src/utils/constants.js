@@ -9,15 +9,13 @@ import {
   react,
   Dribble,
   eye,
-  eyeIconWhite,
-  Discord,
 } from "../assets/icons";
 
 import {
   CarsWebsite,
   KnowmynationWebsite,
+  NftsGallery,
   MultiverseConnections,
-  PortfolioWebsite,
 } from "../assets/images/index";
 
 export const navLinks = [
@@ -60,17 +58,6 @@ export const projects = [
   },
   {
     id: 2,
-    imgUrl: PortfolioWebsite,
-    title: "Portfolio Website",
-    description: "My portfolio  that showcases my  skills ",
-    tagText: "Front End",
-    icon1: Github,
-    href1: "https://github.com/GOKULNATH-RS/Porfolio",
-    icon2: eye,
-    href2: "https://gokulnath-rs.netlify.app/",
-  },
-  {
-    id: 3,
     imgUrl: KnowmynationWebsite,
     title: "Know My Nation",
     description: "A simplified Website to know everything about India",
@@ -81,7 +68,7 @@ export const projects = [
     href2: "https://knowmynation.netlify.app/",
   },
   {
-    id: 4,
+    id: 3,
     imgUrl: MultiverseConnections,
     title: "Multiverse Connections",
     description:
@@ -91,6 +78,18 @@ export const projects = [
     href1: "https://github.com/GOKULNATH-RS/Multiverse-Connections",
     icon2: eye,
     href2: "https://multiverseconnections.netlify.app/",
+  },
+  {
+    id: 4,
+    imgUrl: NftsGallery,
+    title: "NFTs Gallery",
+    description:
+      "About NFT Explorer, a user-friendly web app introducing NFTs.",
+    tagText: "Full Stack",
+    icon1: Github,
+    href1: "https://github.com/GOKULNATH-RS/NFT_Gallery_Website",
+    icon2: eye,
+    href2: "https://nftsgallery.netlify.app/",
   },
 ];
 
