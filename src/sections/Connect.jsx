@@ -74,6 +74,3 @@ const Connect = () => {
 };
 
 export default Connect;
-
-
-9894083563
