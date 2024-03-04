@@ -12,7 +12,7 @@ const Aboutme = () => {
         variants={RotateIn("left")}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        // viewport={{ once: false, amount: 0.25 }}
         className="flex-1 w-full h-full flex justify-center items-center max-sm:hidden"
       >
         <img src={AboutImg} className="h-[65vh] w-max" />
@@ -32,8 +32,21 @@ const Aboutme = () => {
           whileInView="show"
           className="text-lg flex justify-start leading-normal font-poppins text-black-90 dark:text-white md:text-md"
         >
-          {AboutText}
+          <p>
+            Hey there! I'm a sophomore pursuing a BTech in IT from Coimbatore,
+            and I'm genuinely intrigued by the world of Full Stack Development.
+            I've already got a good grip on{" "}
+            <span className="font-bold">HTML</span>,{" "}
+            <span className="font-bold">CSS</span>, and designing user
+            interfaces with <span className="font-bold">Figma</span>. Currently,
+            I'm on a journey to master the{" "}
+            <span className="font-bold">MERN</span> stack. Apart from academics,
+            you'll find me actively involved in open-source projects and tech
+            communities. And guess what? I've also taken a dive into the
+            captivating realm of DevOps.
+          </p>
         </motion.p>
+
         <div className="flex gap-4 flex-wrap">
           {skills.map((skill, i) => (
             <motion.div
@@ -41,7 +54,7 @@ const Aboutme = () => {
               initial="hidden"
               whileInView="show"
               key={skill.icon}
-              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.15)] lg:p-2 p-[10px] hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.25)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
+              className="h-[52px] w-[52px] rounded-full flex justify-center  items-center shadow-[2px_2px_15px_0_rgba(0,0,0,0.25)] lg:p-2 p-[10px] hover:shadow-[2px_2px_15px_0_rgba(0,0,0,0.35)] dark:bg-[#03001c] dark:hover:shadow-[2px_2px_15px_0_rgba(255,255,255,0.15)]"
             >
               <motion.img
                 src={skill.icon}

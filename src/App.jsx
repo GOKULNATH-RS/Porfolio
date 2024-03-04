@@ -1,4 +1,10 @@
-import { Hero, Aboutme, Projects, Connect } from "./sections/index.js";
+import {
+  Hero,
+  Aboutme,
+  Projects,
+  Connect,
+  Achievement,
+} from "./sections/index.js";
 
 export default function App() {
   return (
@@ -14,6 +20,7 @@ export default function App() {
         <Projects />
         <div className="blur-[125px] gradient-1 h-[30vh] w-[35vw] absolute left-0 bottom-0 -z-[1] dark:z-0" />
         <div className="blur-[125px] gradient-2 h-[70vh] w-[35vw] absolute right-0 top-1/3 -z-[1] " />
+
         <Connect />
       </div>
     </section>

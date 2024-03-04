@@ -1,14 +1,15 @@
 import {
-  CSS,
   Figma,
   Github,
-  HTML,
   Linkedin,
   Tailwind,
   Twitter,
   react,
   Dribble,
   eye,
+  mongodbIcon,
+  expressjsIcon,
+  nodejsIcon,
 } from "../assets/icons";
 
 import {
@@ -16,6 +17,7 @@ import {
   KnowmynationWebsite,
   NftsGallery,
   MultiverseConnections,
+  HackElite,
 } from "../assets/images/index";
 
 export const navLinks = [
@@ -35,13 +37,22 @@ export const AboutText =
   "Hey there! I'm a sophomore pursuing a BTech in IT from Coimbatore, and I'm genuinely intrigued by the world of Full Stack Development. I've already got a good grip on HTML, CSS, and designing user interfaces with Figma. Currently, I'm on a journey to master the MERN stack. Apart from academics, you'll find me actively involved in open-source projects and tech communities. And guess what? I've also taken a dive into the captivating realm of DevOps.";
 
 export const skills = [
-  { icon: HTML, alt: "HTML" },
-  { icon: CSS, alt: "CSS" },
   { icon: react, alt: "React" },
+  { icon: expressjsIcon, alt: "ExpressJS" },
+  { icon: nodejsIcon, alt: "Node JS" },
+  { icon: mongodbIcon, alt: "MongoDB" },
   { icon: Figma, alt: "Figma" },
   { icon: Tailwind, alt: "Tailwind CSS" },
 ];
 
+export const AchievementData = [
+  {
+    eventname: "Hack Elite'23",
+    img: HackElite,
+    date: "Nov 2023",
+    place: "Sri Manakula Vinayaga Eng College, Pondicherry",
+  },
+];
 export const projects = [
   {
     id: 1,

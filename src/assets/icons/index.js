@@ -14,6 +14,9 @@ import eyeIconWhite from "./icons-eye-white.svg";
 import codeIcon from "./icons-code.svg";
 import sleepIcon from "./icons-sleep.svg";
 import repeatIcon from "./icons-repeat.svg";
+import nodejsIcon from "./icons8-node-js.svg";
+import mongodbIcon from "./icons-mongodb.png";
+import expressjsIcon from "./icons8-express-js.svg";
 
 export {
   Github,
@@ -32,4 +35,7 @@ export {
   repeatIcon,
   codeIcon,
   eyeIconWhite,
+  nodejsIcon,
+  mongodbIcon,
+  expressjsIcon,
 };

@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
 import HeroImg from "../assets/images/hero-image.svg";
 import { Herolinks } from "../utils/constants";
-import { FadeIn, SlideIn, navVariants } from "../utils/motion";
-import { motion, stagger } from "framer-motion";
+import { FadeIn, navVariants } from "../utils/motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
         variants={navVariants(0.4)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        // viewport={{ once: false, amount: 0.25 }}
         className="blur-[145px] gradient-1 h-[50vh] w-[40vw] absolute top-2 left-[-2] -z-[1] dark:z-0"
       />
       <div className="flex-align-center mx-[15%] mt-4 py-5 dark:z-3 max-sm:flex-col">
